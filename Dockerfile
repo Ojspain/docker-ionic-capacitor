@@ -11,7 +11,7 @@ ARG ANDROID_BUILD_TOOLS_VERSION=33.0.0
 # See https://developer.android.com/studio/releases/platforms
 ARG ANDROID_PLATFORMS_VERSION=32
 # See https://gradle.org/releases/
-ARG GRADLE_VERSION=8.2.1
+ARG GRADLE_VERSION=7.4.2
 # See https://www.npmjs.com/package/@ionic/cli
 ARG IONIC_VERSION=6.20.8
 # See https://www.npmjs.com/package/@capacitor/cli
