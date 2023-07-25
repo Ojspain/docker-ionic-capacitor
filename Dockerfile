@@ -45,8 +45,9 @@ RUN locale-gen en_US.UTF-8 && update-locale
 # Install Gradle
 ENV GRADLE_HOME=/opt/gradle
 RUN mkdir $GRADLE_HOME \
-    && curl -sL https://gradle.org/next-steps/?version=${GRADLE_VERSION}&format=bin -o gradle-${GRADLE_VERSION}-bin.zip \
-    && unzip -d $GRADLE_HOME gradle-${GRADLE_VERSION}-bin.zip
+    && curl -sL https://gradle.org/next-steps/?version=${GRADLE_VERSION}&format=bin \
+    && unzip -d $GRADLE_HOME gradle-${GRADLE_VERSION}-bin.zip \
+    && ls /opt/gradle/gradle-${GRADLE_VERSION}
 ENV PATH=$PATH:/opt/gradle/gradle-${GRADLE_VERSION}/bin
 
 # Install Android SDK tools
